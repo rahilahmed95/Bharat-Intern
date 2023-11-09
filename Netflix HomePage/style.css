@@ -1,0 +1,388 @@
+/* default CSS */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/ab4b0b22-2ddf-4d48-ae88-c201ae0267e2/0efe6360-4f6d-4b10-beb6-81e0762cfe81/IN-en-20231030-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+    no-repeat center center/cover;
+  padding-bottom: 100px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+/* Navbar */
+.navbar-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.navbar {
+  width: 95%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.relative {
+  position: relative;
+}
+
+.language-logo {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+select {
+  background-color: #11191a;
+  color: #fff;
+  padding: 6px 15px 6px 35px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+.btn {
+  background-color: #e50914;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c11119;
+}
+
+.hero-content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 120px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.hero-content :nth-child(3) {
+  font-size: 1.3rem;
+}
+
+.hero-email-container input {
+  height: 50px;
+  width: 400px;
+  background-color: transparent;
+  border: none;
+  outline: 1px solid gray;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.hero-email-container button {
+  height: 50px;
+  width: 200px;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.enjoy-tv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-top: 10px solid #232323;
+  border-bottom: 10px solid #232323;
+}
+
+.enjoy-tv-container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.tv-left h1,
+.watch-left h1 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.tv-left p,
+.watch-left p {
+  font-size: 23px;
+}
+
+.tv {
+  position: relative;
+  z-index: 10;
+}
+
+.tv-video {
+  position: absolute;
+  top: 102px;
+  right: 90px;
+}
+
+.download-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding-bottom: 100px;
+}
+
+.download-show-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid #232323;
+  padding: 80px 0;
+}
+
+.download-right h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.download-right p {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.download-stranger-container {
+  position: absolute;
+  color: white;
+  background-color: black;
+  bottom: 35px;
+  right: 150px;
+  z-index: 10;
+  border: none;
+  outline: 2px solid rgb(72, 72, 72);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+}
+
+.stranger-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.watch-everywhere {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid #232323;
+  padding-bottom: 30px;
+}
+
+.watch-container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch-video {
+  position: absolute;
+  top: 40px;
+  right: 130px;
+}
+
+.profile {
+  padding-right: 30px;
+}
+
+.FAQ__accordian {
+  width: 100%;
+}
+.FAQ__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: #303030;
+  border: 1px solid #303030;
+  color: white;
+}
+
+.FAQ__visible {
+  background-color: #303030;
+  border-top: 1px solid black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.FAQ__visible > p {
+  margin: 1rem;
+}
+
+.FAQ__list__container {
+  background-color: black;
+  color: white;
+  border-top: 8px solid #222;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid #232323;
+}
+
+.FAQ__heading {
+  font-size: 48px;
+  text-align: center;
+  font-weight: 800;
+  margin: 1rem 3rem;
+}
+
+.FAQ__list {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.FAQ__accordian button {
+  padding: 25px;
+}
+
+.FAQ__title {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.FAQ__title:hover {
+  background-color: #414141;
+}
+
+.FAQ__visible p {
+  font-size: 25px;
+}
+
+.FAQ__get__started__email {
+  text-align: center;
+  color: white;
+}
+input {
+  color: white;
+}
+.FAQ__get__started__email > h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+footer {
+  background-color: black;
+  color: #b0b0b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  font-size: 15px;
+  color: #b0b0b0;
+}
+
+.footer-container {
+  width: 95%;
+  padding: 40px 0 80px 0;
+  color: #b0b0b0;
+  gap: 30px;
+}
+
+.footer-cols {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
